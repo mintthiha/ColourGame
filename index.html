@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colours Game</title>
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <script src="js/tableClick.js"></script>
+    <script src="js/submitGuess.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/generateTable.js"></script>
+    <script src="js/cheatCode.js"></script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/clearScore.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Colours Game</h1>
+    </header>
+    <main>
+      <section id="inputSection">
+        <h2>Game Setup</h2>
+        <form action="POST">
+          <fieldset>
+            <div class="inputContainer">
+              <label for="name">Player Name</label>
+              <input type="text" id="name" name="name" minlength="5" required />
+            </div>
+            <div class="inputContainer">
+              <label for="boardSize">Board Size</label>
+              <input
+                type="number"
+                id="boardSize"
+                name="boardSize"
+                min="3"
+                max="7"
+                required
+              />
+            </div>
+            <div class="inputContainer">
+              <label for="color">Colour</label>
+              <select name="color" id="color">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="inputContainer">
+              <label for="difficulty">Difficulty</label>
+              <input
+                type="range"
+                id="difficulty"
+                name="difficulty"
+                min="0"
+                max="3"
+                step="1"
+              />
+            </div>
+            <button id="generateTableButton" type="submit">
+              Generate Table!
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="gameSection">
+        <div id="gameContainer">
+          <table id="gameTable"></table>
+          <div id="underTableContainer">
+            <button id="submitGuessButton" type="submit">
+              Submit your guess
+            </button>
+            <h3></h3>
+          </div>
+        </div>
+        <aside>
+          <h4>High Scores</h4>
+          <div id="scoreContainer">
+            <table id="scoreTable">
+            </table>
+            <button id="clearButton">Clear</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <h6>Copyright © Dmitriy Kim / Thiha Min Thein</h6>
+    </footer>
+  </body>
+</html>
