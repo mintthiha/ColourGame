@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    box-sizing: border-box;
+}
+
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+}
+
+h2{
+    text-align: center;
+    font-size: 32pt;
+    align-self: center;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    border: 1px solid black;
+}
+
+#inputSection{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    border-bottom: 1px solid black;
+}
+
+form{
+    display: grid;
+}
+
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.inputContainer {
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 75%;
+    width: 15%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin: 5px;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20pt;
+    justify-self: center;
+    align-self: center;
+}
+
+input, select {
+    width: 75%;
+    height: 85%;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    font-size: 16pt;
+    padding: 5px;
+}
+
+input:invalid{
+    background-color: rgb(255, 167, 167);
+}
+
+button {
+    width: 15%;
+    height: 70%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+#gameSection {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#gameContainer{
+    display: grid;
+    grid-template-rows: 85% 15%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#gameTable .selected{
+    border: 2px solid red;
+}
+
+#underTableContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#submitGuessButton{
+    justify-self: flex-end;
+    align-self: center;
+    height: 75%;
+    font-size: 16pt;
+}
+
+h3{
+    margin: 10px;
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 24pt;
+}
+
+aside{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    border-left: 1px solid black;
+}
+
+#scoreContainer {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+}
+
+#scoreTable{
+    width: 100%;
+    font-size: 20pt;
+} 
+
+
+
+#scoreTable tr{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+#scoreTable th{
+    text-align: center;
+}
+
+#scoreTable td{
+    text-align: center;
+}
+
+
+
+#clearButton{
+    width: 30%;
+    background-color: rgb(255, 186, 250);
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+
+h4{
+    font-size: 24pt;
+    text-align: center;
+    align-self: center;
+}
+
+#gameTable tr, #gameTable td{
+    border: 2px solid black;
+}
+
+#gameTable td{
+    font-size: 16pt;
+    color: red;
+}
+
+h6{
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}

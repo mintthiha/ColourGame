@@ -1,0 +1,146 @@
+@media (max-width: 825px){
+    #gameSection{
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+    }
+
+    body{
+        grid-template-rows: 7.5% 135% 7.5%;
+    }
+
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    html{
+        height: 100vh;
+    }
+
+    main{
+        grid-template-rows: 25% 75%;
+    }
+
+    h1{
+        font-size: 24pt;
+    }
+
+    h2{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    fieldset{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inputContainer {
+        width: 200px;
+        height: 50px;
+        margin: 0;
+    }
+
+    label{
+        font-size: 10pt;
+        position: relative;
+        color: grey;
+    }
+
+    input, select {
+        font-size: 10pt;
+        height: 100%;
+    }
+
+    #generateTableButton{
+        font-size: 10pt;
+        width: 200px;
+        height: 50px;
+        margin: 0;
+    }
+
+    #submitGuessButton{
+        font-size: 10pt;
+        width: 200px;
+        height: 50px;
+    }
+
+    #underTableContainer{
+        margin: 0;
+    }
+
+    aside{
+        border-left: 0;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    #scoreContainer {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    h3{
+        font-size: 12pt;
+    }
+    
+    td{
+        font-size: 10pt;
+    }
+
+    #gameTable td, #gameTable tr{
+        border: 1px solid black;
+        font-size: 8pt;
+    }
+
+    #gameTable .selected{
+        border: 1px solid red;
+    }
+
+    h4{
+        font-size: 12pt;
+        margin: 10px;
+    }
+
+    #clearButton{
+        font-size: 12pt;
+        width: 50%;
+        height: 40%;
+    }
+
+
+    #scoreTable td, #scoreTable th {
+        font-size: 12pt;
+    }
+
+    h6{
+        font-size: 10pt;
+    }
+
+    #scoreTable tr{
+        padding: 0;
+    }
+}
+
+@media (max-height: 800px) {
+
+    #submitGuessButton{
+        font-size: 10pt;
+    }
+
+    .inputContainer {
+        width: 150px;
+        height: 40px;
+    }
+
+    #generateTableButton{
+        width: 150px;
+        height: 40px;
+    }
+
+    h3{
+        font-size: 9pt;
+    }
+}
+
+
